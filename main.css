@@ -31,7 +31,7 @@ body {
     display: inline-block;
 }
 .menu > ul > li:hover {
-    animation: colorHover .5s ease-out forwards;
+    animation: colorHover .2s ease-out forwards;
 }
 
 li + li {
@@ -56,6 +56,5 @@ li + li {
 
 @keyframes colorHover {
     0%{ transform: translateY(0px); color:gray; }
-    50% { transform: translateY(-10px); }
-    100%{ transform: translateY(0px); color:black; }
+    100%{ transform: translateY(-5px); color:black; }
 }
