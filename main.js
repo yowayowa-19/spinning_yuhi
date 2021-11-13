@@ -11,3 +11,11 @@ function handleTouchMove(event) {
 }
 //スクロールの禁止
 document.addEventListener('wheel', handleTouchMove, { passive: false });
+
+function showProfile() {
+    alert("profile");
+}
+
+function showHowToPlay() {
+    alert("howtoplay");
+}
