@@ -12,8 +12,28 @@ body {
     align-items: center;
 }
 
+p {
+    text-align: center;
+}
+
 .yuhi {
     animation:2s linear infinite rotationZ;
+}
+
+.profile {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.contents {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background: rgb(255,255,255,0.5);
 }
 
 .menu {

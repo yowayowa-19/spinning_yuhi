@@ -12,8 +12,16 @@ function handleTouchMove(event) {
 //スクロールの禁止
 document.addEventListener('wheel', handleTouchMove, { passive: false });
 
+window.onload = function () { 
+    const profileDiv = document.getElementById("profile");
+    profileDiv.addEventListener('click', event => {
+        profileDiv.style.visibility = 'hidden';
+    })
+};
+
 function showProfile() {
-    alert("profile");
+    const target = document.getElementById("profile");
+    target.style.visibility = 'visible';
 }
 
 function showHowToPlay() {
