@@ -20,9 +20,7 @@ function handleTouchMove(event) {
 
 //スクロールの禁止
 document.addEventListener('wheel', handleTouchMove, { passive: false });
-/*
 document.addEventListener('touchmove', handleTouchMove, { passive: false });
-*/
 
 window.onload = function () { 
     const profileDiv = document.getElementById("profile");
