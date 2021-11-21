@@ -16,11 +16,14 @@ window.addEventListener('touchmove', function(event){
 function handleTouchMove(event) {
     event.preventDefault();
 }
+function handleWheel(event){
+    event.preventDefault();
+}
 
 
 //スクロールの禁止
 document.addEventListener('wheel', handleTouchMove, { passive: false });
-document.addEventListener('touchmove', handleTouchMove, { passive: false });
+document.addEventListener('touchmove', handleWheel, { passive: false });
 
 window.onload = function () { 
     const profileDiv = document.getElementById("profile");
