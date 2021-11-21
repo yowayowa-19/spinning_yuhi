@@ -6,9 +6,14 @@ window.addEventListener('wheel', function(event){
     yuhi.style.transform = `scale(${scale})`;
 });
 
+var touchposition;
+window.addEventListener('touchstart',function(event){
+    touchposition = event.changedTouches[0].pageY;
+})
+
 window.addEventListener('touchmove', function(event){
     const yuhi = this.document.getElementById('yuhi');
-    scale += event.deltaY * -0.001;
+    scale +=  (event.changedTouches[0].pageY - touchposition) * -0.001;
     yuhi.style.transform = `scale(${scale})`;
 });
 
